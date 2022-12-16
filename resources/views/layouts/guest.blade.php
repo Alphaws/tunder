@@ -12,7 +12,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+        @if (Str::startsWith($current = url()->current(), 'https://www'))
+            <link rel="canonical" href="{{ str_replace('https://www.', 'https://', $current) }}">
+        @else
+            <link rel="canonical" href="{{ str_replace('https://', 'https://www.', $current) }}">
+        @endif
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
