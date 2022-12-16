@@ -19,5 +19,20 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        <footer class="p-4 bg-gray-900 shadow md:flex md:items-center md:justify-between md:p-6">
+    <span class="text-sm text-gray-200 sm:text-center">© 2022 <a href="https://prstart.hu/" target="_blank" class="hover:underline">PrStart.hu™</a>. All Rights Reserved.
+    </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-200 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">Rólunk</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Adatvédelem</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Kapcsolat</a>
+                </li>
+            </ul>
+        </footer>
     </body>
 </html>
